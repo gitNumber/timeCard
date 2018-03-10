@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body {
+    padding: 10px;
+    margin: 0;
+    font: 14px/1.5 Mircsoft yahei, sans-serif;
+    background: #fff;
+}
+
+div, ul, ol, li, h1, h2, h3, h4, h5, h6, input,p, span {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004284;
+    text-decoration: underline;
+}

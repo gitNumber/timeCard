@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+@import url("./reset.css");
+
+.date_plugin {
+    min-width: 1300px;
+    overflow-x: auto;
+}
+
+/* silder */
+.date_plugin .silder {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.date_plugin .year_select  {
+    padding-left: 10px;
+}
+
+.date_plugin .month_select {
+    overflow: hidden;
+}
+
+.date_plugin .month_select li  {
+    float: left;
+    margin: 10px 0 0 10px ;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    background-color: #ccc;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.date_plugin .month_select li:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #a00;
+}
+
+.date_plugin .month_select li.hover {
+    color: #fff;
+    background-color: #a00;
+}
+
+.date_plugin .message {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.date_plugin .year_select select {
+    width: 100px;
+    padding: 5px 0 5px 20px;
+}
+
+/* main */
+.date_plugin .main {
+    overflow: hidden;
+    padding: 10px;
+    min-width: 854px;
+}
+
+.date_plugin .week_layout {
+    overflow: hidden;
+    height: 5%;
+}
+
+.date_plugin .week_layout li{
+    float: left;
+    width: 13%;
+    min-width: 100px;
+    font-weight: 600;
+    border-bottom:1px solid #ccc;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.date_plugin .day_layout {
+    overflow: hidden;
+}
+.date_plugin .day_layout .every_day {
+    float: left;
+    width: 11%;
+    height: 100px;
+    min-width: 110px;
+    min-height: 80px;
+    margin: 10px 10px 10px 0;
+    border: 1px #ccc solid;
+    font-size: 12px;
+    padding: 10px;
+    position: relative;
+}
+
+.date_plugin .every_day .day {
+    list-style-type: normal;
+    text-decoration: underline;
+} 
+
+.date_plugin .day_state {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-left : 1px #ccc solid;
+    border-top : 1px #ccc solid;
+    line-height: 25px;
+    padding: 0 5px;
+} 
+
+.date_plugin .day_mark {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left : 1px #ccc solid;
+    border-bottom : 1px #ccc solid;
+    line-height: 25px;
+    padding: 0 5px;
+    background-color: green;
+    color: #fff;
+}
+
+.date_plugin .holiday .day_state{
+    color: red;
+}
+
+.date_plugin .todo_list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.date_plugin .weekend {
+    background-color: #99EA5F;
+}
+
+.date_plugin .weekend .day_state {
+    background-color: #fce;
+    border: none;
+    color: #c00;
+} 

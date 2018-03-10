@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@import url("./reset.css");
+@import url("./stylesIE11.css");
+
+.date_plugin {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* silder */
+.date_plugin .year_select  {
+    padding-left: 10px;
+}
+
+.date_plugin .year_select select {
+    width: 100px;
+    padding: 5px 0 5px 20px;
+}
+
+.date_plugin .month_select ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.date_plugin .month_select li  {
+    text-align: center;
+    background-color: #ccc;
+    margin: 10px 0 0 10px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.date_plugin .month_select li:hover {
+    cursor: pointer;
+    color: #c00;
+}
+
+.date_plugin .message {
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+/* main */
+.date_plugin .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px minmax(100px,auto);
+    margin-left: 10px;
+}
+
+.date_plugin .week_layout ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: minmax(30px,auto-fill);
+}
+
+.date_plugin .day_layout {
+    display: grid;
+    grid-template-columns:repeat(7,minmax(120px,1fr));;
+    grid-template-rows: repeat(5,1fr);;
+}
